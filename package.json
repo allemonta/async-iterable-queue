@@ -1,0 +1,52 @@
+{
+  "name": "dynamic-async-iterable",
+  "version": "0.0.1",
+  "description": "A simple asynchronous queue with an async iterator interface, supporting dynamic enqueueing.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsup",
+    "test": "node --loader tsx --test test"
+  },
+  "keywords": [
+    "async-queue",
+    "async-iterator",
+    "async-iterable",
+    "queue",
+    "typescript",
+    "stream",
+    "consumer",
+    "iterable"
+  ],
+  "author": "Alessandro Montanari <alessandro.montanari7@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allemonta/dynamic-async-iterable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/allemonta/dynamic-async-iterable/issues"
+  },
+  "homepage": "https://github.com/allemonta/dynamic-async-iterable#readme",
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.1",
+    "@types/node": "^22.15.18",
+    "tsup": "^8.5.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
