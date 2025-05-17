@@ -1,6 +1,6 @@
 {
   "name": "dynamic-async-iterable",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A simple asynchronous queue with an async iterator interface, supporting dynamic enqueueing.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
